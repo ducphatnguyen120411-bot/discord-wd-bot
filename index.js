@@ -22,11 +22,13 @@ client.on("messageCreate", async (message) => {
     await message.react("🔁");
     await message.react("🇩");
   }
-if (msg.includes("W/D")) {
+
+  if (msg.includes("W/D")) {
     await message.react("A");
     await message.react("🔁");
     await message.react("🇩");
 }
+ 
   if (msg.includes("A/D")) {
     await message.react("🇦");
     await message.react("🔁");
