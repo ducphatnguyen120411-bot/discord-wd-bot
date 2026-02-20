@@ -15,24 +15,24 @@ client.once("ready", () => {
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
-  const msg = message.content.toUpperCase();
+  const msg = message.content.toLowerCase();
 
-  if (msg.includes("W/D")) {
-    await message.react("A");
+  if (msg === "w/d") {
+    await message.react("🇼");
     await message.react("🔁");
     await message.react("🇩");
   }
 
-  if (msg.includes("W/D")) {
-    await message.react("A");
-    await message.react("🔁");
-    await message.react("🇩");
-}
- 
-  if (msg.includes("A/D")) {
+  if (msg === "a/d") {
     await message.react("🇦");
     await message.react("🔁");
     await message.react("🇩");
+  }
+
+  if (msg === "w/l") {
+    await message.react("🇼");
+    await message.react("🔁");
+    await message.react("🇱");
   }
 });
 
